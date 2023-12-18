@@ -95,6 +95,35 @@ function PublishModal ({ show, handleClose, publication, user, token, getProduct
     handleClose()
   }
 
+  const deletePublish = async () => {
+    try {
+      const response = await fetch(ENDPOINTS.addPublication + `/${publication.id}`, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`
+        }
+      })
+      await getProducts()
+      if (response.ok) {
+        MySwal.fire({
+          title: 'Publicación eliminada correctamente',
+          icon: 'success',
+          text: 'Bienvenido, ' + user.correo_electronico
+        })
+      } else {
+        throw new Error(response.statusText)
+      }
+    } catch (error) {
+      MySwal.fire({
+        title: 'Algo salio mal',
+        text: error.message,
+        icon: 'error'
+      })
+    }
+    handleClose()
+  }
+
   return (
     <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
@@ -123,7 +152,7 @@ function PublishModal ({ show, handleClose, publication, user, token, getProduct
           </Form.Group>
 
           <Form.Group className="mb-3">
-            <Form.Label>Descripction</Form.Label>
+            <Form.Label>Description</Form.Label>
             <Form.Control
               as="textarea"
               rows={3}
@@ -134,7 +163,7 @@ function PublishModal ({ show, handleClose, publication, user, token, getProduct
           </Form.Group>
 
           <Form.Group className="mb-3">
-            <Form.Label>Categoría</Form.Label>
+            <Form.Label>Category</Form.Label>
             <Form.Control
               as="select"
               name="category"
@@ -169,6 +198,14 @@ function PublishModal ({ show, handleClose, publication, user, token, getProduct
           <Button variant="primary" type="submit">
              {publication ? 'Update' : 'Create'}
           </Button>
+
+          {
+            publication && (
+              <Button variant="danger" className="ms-2" onClick={deletePublish}>
+                Delete
+              </Button>
+            )
+          }
         </Form>
       </Modal.Body>
     </Modal>
