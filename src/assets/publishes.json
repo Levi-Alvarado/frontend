@@ -1,0 +1,125 @@
+{
+  "publicaciones": [
+    {
+      "id": 1,
+      "id_usuario": 45,
+      "fecha_publicacion": "2023-11-25T10:00:00Z",
+      "titulo": "Laptop HP 15s-eq1023la",
+      "descripcion": "Laptop HP 15s-eq1023la, 15.6\", AMD Ryzen 5 4500U, 8GB RAM, 256GB SSD, Windows 10 Home",
+      "id_categoria": 3,
+      "precio": 500000,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_732841-MLC71646608420_092023-F.webp",
+      "comentarios": [
+        {
+          "id": 101,
+          "contenido": "Lindo note.",
+          "id_usuario": 789,
+          "id_publicacion": 1,
+          "fecha_comentario": "2023-11-25T11:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "id_usuario": 1,
+      "fecha_publicacion": "2023-11-24T15:45:00Z",
+      "titulo": "Celular Samsung Galaxy A14",
+      "descripcion": "Samsung Galaxy A14 (Exynos) 5G Dual SIM 128 GB black 4 GB RAM",
+      "id_categoria": 2,
+      "precio": 199000,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_724423-MLA54240685004_032023-F.webp",
+      "comentarios": [
+        {
+          "id": 102,
+          "contenido": "Mal celu.",
+          "id_usuario": 654,
+          "id_publicacion": 2,
+          "fecha_comentario": "2023-11-24T16:00:00Z"
+        },
+        {
+          "id": 103,
+          "contenido": "A mi me parece bueno.",
+          "id_usuario": 321,
+          "id_publicacion": 2,
+          "fecha_comentario": "2023-11-24T17:20:00Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "id_usuario": 45,
+      "fecha_publicacion": "2023-11-25T10:00:00Z",
+      "titulo": "Smart Tv Aiwa",
+      "descripcion": "Smart Tv Android Hd Aiwa Bluetooth Google Assistant 32",
+      "id_categoria": 1,
+      "precio": 120000,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_990231-MLU72628277622_112023-F.webp",
+      "comentarios": [
+        {
+          "id": 101,
+          "contenido": "Nice TV.",
+          "id_usuario": 789,
+          "id_publicacion": 3,
+          "fecha_comentario": "2023-11-25T11:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "id_usuario": 45,
+      "fecha_publicacion": "2023-11-25T10:00:00Z",
+      "titulo": "Smart Tv Caixun",
+      "descripcion": "Caixun Led Smart Tv Roku Tv 50 Uhd C50v1ur",
+      "id_categoria": 1,
+      "precio": 250000,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_655053-MLU72419638330_102023-F.webp",
+      "comentarios": [
+        {
+          "id": 101,
+          "contenido": "I didn't like it.",
+          "id_usuario": 789,
+          "id_publicacion": 4,
+          "fecha_comentario": "2023-11-25T11:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "id_usuario": 45,
+      "fecha_publicacion": "2023-11-25T10:00:00Z",
+      "titulo": "Moto G54",
+      "descripcion": "Celular Moto G54 5g 8+256",
+      "id_categoria": 2,
+      "precio": 300000,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_959787-MLC72145371134_102023-F.webp",
+      "comentarios": [
+        {
+          "id": 101,
+          "contenido": "Aun no estoy segura si me gusta o no.",
+          "id_usuario": 789,
+          "id_publicacion": 5,
+          "fecha_comentario": "2023-11-25T11:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "id_usuario": 45,
+      "fecha_publicacion": "2023-11-25T10:00:00Z",
+      "titulo": "Apple Macbook Air",
+      "descripcion": "Apple Macbook Air 13'' Chip M1 - 8 Gb - Apple Color Gris espacial",
+      "id_categoria": 3,
+      "precio": 900000,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_614885-MLA49588273946_042022-F.webp",
+      "comentarios": [
+        {
+          "id": 101,
+          "contenido": "I love it",
+          "id_usuario": 789,
+          "id_publicacion": 6,
+          "fecha_comentario": "2023-11-25T11:30:00Z"
+        }
+      ]
+    }
+  ]
+}

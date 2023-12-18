@@ -1,0 +1,45 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.hovereable {
+  cursor: pointer;
+}
+
+.hovereable:hover {
+  color: #1890ff;
+}
+
+
+#navbarCart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 46px;
+  padding-top: 2px;
+}
+
+#navbarCart:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#navbarCart .cart-items {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 4.5px 4px;
+}
+
