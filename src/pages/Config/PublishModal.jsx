@@ -182,8 +182,8 @@ function PublishModal ({ show, handleClose, publication, user, token, getProduct
           <Form.Group className="mb-3">
             <Form.Label>Price</Form.Label>
             <Form.Control
+            /* only integer numbers */
               type="number"
-              step="0.01"
               name="price"
               value={formData.price}
               onChange={handleChange}
