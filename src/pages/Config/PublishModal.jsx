@@ -97,7 +97,7 @@ function PublishModal ({ show, handleClose, publication, user, token, getProduct
 
   const deletePublish = async () => {
     try {
-      const response = await fetch(ENDPOINTS.addPublication + `/${publication.id}`, {
+      const response = await fetch(ENDPOINTS.addPublication.path + `/${publication.id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
